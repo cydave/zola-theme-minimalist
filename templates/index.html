@@ -1,0 +1,13 @@
+{% include "partials/header.html" %}
+{% block content %}
+<ul>
+    {% set blog_section = get_section(path="blog/_index.md") %}
+    {% for page in blog_section.pages | reverse %}
+    <li>
+        <time>{{ page.date | date(format=config.extra.minimalist_date_format) }}</time>
+        <a href="{{ page.permalink|safe }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+{% include "partials/footer.html" %}
