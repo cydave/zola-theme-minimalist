@@ -6,6 +6,9 @@ Gmetrix and Webpagetest!
 
 This is a lazy port of [ronv's](https://github.com/ronv) [Minimalist](https://github.com/ronv/minimalist) theme, originally written for Hugo.
 
+![](screenshot.png)
+
+
 ## Features
 
 + Minimalistic, clean and simple design
